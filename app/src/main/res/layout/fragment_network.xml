@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <FrameLayout
+        android:id="@+id/networkPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".view.NetworkFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_weight="1"
+                android:background="@drawable/search_backgrund"
+                android:orientation="horizontal"
+                android:textAllCaps="false"
+                android:textColor="@color/white">
+
+                <!--                <EditText-->
+                <!--                    android:id="@+id/etSearch"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_centerVertical="true"-->
+                <!--                    android:layout_gravity="center_vertical"-->
+                <!--                    android:layout_marginStart="46dp"-->
+                <!--                    android:layout_marginEnd="10dp"-->
+                <!--                    android:background="@android:color/transparent"-->
+                <!--                    android:hint="Search"-->
+                <!--                    android:imeOptions="actionDone"-->
+                <!--                    android:inputType="text"-->
+                <!--                    android:maxLines="6"-->
+                <!--                    android:textColorHint="#978B8B"-->
+                <!--                    tools:ignore="Autofill" />-->
+
+
+                <ImageView
+                    android:id="@+id/ivSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="1dp"
+                    android:padding="5dp"
+                    android:src="@drawable/baseline_search_24" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:src="@drawable/filter_icon" />
+
+        </LinearLayout>
+
+        <!-- TODO: Update blank fragment layout -->
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/exploreRv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+
+<!--            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--            tools:listitem="@layout/custom_rv_itemview" />-->
+
+    </FrameLayout>
+</layout>

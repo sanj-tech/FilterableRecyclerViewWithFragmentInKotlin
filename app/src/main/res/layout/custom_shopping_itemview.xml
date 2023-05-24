@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_view"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="5dp"
+            card_view:cardPreventCornerOverlap="false"
+            card_view:cardUseCompatPadding="false">
+
+            <TextView
+                android:id="@+id/tvInvite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:text="+INVITE"
+                android:textAlignment="textEnd"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="276dp"
+                android:layout_height="68dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="35dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:text="Refill24×7"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvUserDistance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:paddingRight="10dp"
+                    android:text="Ravet within 5.8 KM" />
+
+                <!--                    <SeekBar-->
+                <!--                        android:id="@+id/seekbar"-->
+                <!--                        android:layout_width="159dp"-->
+                <!--                        android:layout_height="16dp"-->
+                <!--                        android:layout_centerHorizontal="true"-->
+                <!--                        android:layout_centerVertical="true"-->
+                <!--                        android:layout_marginTop="5dp"-->
+                <!--                       android:layout_marginStart="0dp"-->
+                <!--                        android:indeterminate="false"-->
+                <!--                        android:max="50"-->
+                <!--                        android:outlineSpotShadowColor="#1D2225"-->
+                <!--                        android:progress="0"-->
+                <!--                        android:progressDrawable="@drawable/custom_distance_progressbar"-->
+                <!--                        android:thumb="@color/purple_500"-->
+                <!--                        android:thumbTint="@color/purple_700" />-->
+
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="223dp"
+                android:layout_height="18dp"
+
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="90dp"
+                android:indeterminate="false"
+                android:max="50"
+                android:outlineSpotShadowColor="#1D2225"
+                android:progress="0"
+                android:progressDrawable="@drawable/custom_distance_progressbar"
+                android:thumb="@color/purple_500"
+                android:thumbTint="@color/purple_700" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="115dp"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="3dp"
+                    android:elevation="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/call_icon" />
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:elevation="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/users_icon" />
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:elevation="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/map_image" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="160dp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvSocialType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/hi_community_we_have_great_deals_for_you_ncheck_us_out"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvUDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/video_arcade" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/image"
+                    android:background="#CCFFFFFF"
+                    android:padding="8dp"
+                    android:text="This is simple title"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <ImageView
+            android:id="@+id/ivUserImage"
+            android:layout_width="70dp"
+            android:layout_height="72dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="53dp"
+            android:elevation="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/contact_image_one" />
+    </RelativeLayout>
+
+
+</layout>

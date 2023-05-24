@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <FrameLayout
+        android:id="@+id/myContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".view.ExploreFragment">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@color/purple_700"
+            app:tabGravity="fill"
+            app:tabIconTint="@color/white"
+            app:tabIndicatorColor="@color/white"
+            app:tabInlineLabel="true"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextAppearance="@style/CustomTabStyle"
+            app:tabTextColor="@color/white" />
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp">
+
+        </androidx.viewpager.widget.ViewPager>
+
+
+        <!--    <LinearLayout-->
+        <!--        android:id="@+id/linar"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="51dp"-->
+        <!--        android:orientation="horizontal"-->
+        <!--        android:layout_marginTop="65dp">-->
+
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="300dp"-->
+        <!--            android:layout_height="40dp"-->
+        <!--            android:layout_marginLeft="20dp"-->
+        <!--            android:background="@drawable/search_backgrund"-->
+        <!--            android:weightSum="2">-->
+
+        <!--            <androidx.appcompat.widget.SearchView-->
+        <!--               android:id="@+id/searchItem"-->
+        <!--                android:layout_width="273dp"-->
+        <!--                android:layout_height="22dp"-->
+        <!--                android:layout_marginTop="8dp"-->
+        <!--                app:iconifiedByDefault="false"-->
+        <!--                app:queryBackground="@android:color/transparent"-->
+        <!--                app:queryHint="Search">-->
+
+        <!--            </androidx.appcompat.widget.SearchView>-->
+
+
+        <!--        </LinearLayout>-->
+        <!--    <ImageView-->
+        <!--                android:id="@+id/ivSearch"-->
+        <!--               android:layout_width="wrap_content"-->
+        <!--               android:layout_height="38dp"-->
+        <!--        android:layout_marginLeft="10dp"-->
+
+        <!--                android:layout_centerVertical="true"-->
+
+        <!--                android:padding="5dp"-->
+        <!--                android:src="@drawable/filter_icon" />-->
+        <!--            </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="50dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="2">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="25dp"-->
+<!--                android:layout_marginTop="20dp"-->
+
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/search_backgrund"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="@color/white">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/etSearch"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:layout_marginStart="46dp"-->
+<!--                    android:layout_marginEnd="10dp"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    android:hint="Search"-->
+<!--                    android:imeOptions="actionDone"-->
+<!--                    android:inputType="text"-->
+<!--                    android:maxLines="6"-->
+<!--                    android:textColorHint="#978B8B"-->
+<!--                    tools:ignore="Autofill" />-->
+
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/ivSearch"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="38dp"-->
+<!--                    android:layout_alignParentStart="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginEnd="1dp"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:src="@drawable/baseline_search_24" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/ivFilter"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginLeft="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginTop="25dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/filter_icon" />&ndash;&gt;-->
+
+<!--        </LinearLayout>-->
+
+
+<!--              <androidx.recyclerview.widget.RecyclerView-->
+<!--                  android:id="@+id/exploreRv"-->
+<!--                  android:layout_width="match_parent"-->
+<!--                  android:layout_height="match_parent"-->
+<!--                  android:layout_marginTop="120dp"-->
+<!--                  app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--                  tools:listitem="@layout/custom_rv_itemview" />-->
+
+    </FrameLayout>
+</layout>

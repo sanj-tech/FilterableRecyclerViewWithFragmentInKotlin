@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">NetclanAppDemo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save_explore"><![CDATA[Save & Explore]]></string>
+    <string name="character_count"> %d /250</string>
+    <string name="slider_label_formatter">%1.0f</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
+    <string name="textItem">Hi Community!.I am available at Your Service!\nI am Vinit Agrawal completed my Graduation\n Lorem IpsumDolor Ait Amet Lorem Ipsum \nLorem Ipsum Dolor Ait Amet Lorem Ipsum...
+       </string>
+    <string name="notification">Notification</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="my_network">My Network</string>
+    <string name="switch_to_professional">Switch to Professional</string>
+    <string name="switch_to_merchant">Switch to Merchant</string>
+    <string name="datting">Datting</string>
+    <string name="trash">Trash</string>
+    <string name="buy_sell_rent">Buy-Sell-Rent</string>
+    <string name="job">Job</string>
+    <string name="business_cards">Business Cards</string>
+    <string name="hashtags">Hashtags</string>
+    <string name="notes">Notes</string>
+    <string name="live_location">Live Location</string>
+    <string name="refine">Refine</string>
+    <string name="explore">Explore</string>
+    <string name="nework">Nework</string>
+    <string name="chat">Chat</string>
+    <string name="contact">Contact</string>
+    <string name="ms_jenny">Ms.Jenny</string>
+    <string name="software_developer">Software Developer</string>
+    <string name="hi_community_i_am_open_to_new_connections_n">Hi Community! I am open to new Connections.\n 😊</string>
+    <string name="hi_community_we_have_great_deals_for_you_ncheck_us_out">Hi Community! We have great deals for You.\nCheck us out!!</string>
+    <string name="video_arcade">Video arcade</string>
+    <string name="invite">+INVITE</string>
+    <string name="friendship_coffee_hangout">Friendship | Coffee | Hangout</string>
+    <string name="this_is_simple_title">This is simple title</string>
+    <string name="ascochinga_within_80_2km">Ascochinga within 80.2KM</string>
+    <string name="diago_maradona">Diago Maradona</string>
+
+    <string-array name="rangeSlider">
+
+        <item>70</item>
+        <item>20</item>
+    </string-array>
+
+
+</resources>

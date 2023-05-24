@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.RefineFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Select Your Availablity"
+                    android:textColor="@color/purple_500"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/search_edit_background"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="10dp"
+
+                        android:background="@drawable/custom_spinner_item"
+                        android:dropDownVerticalOffset="40dp" />
+
+
+                    <!--        <Spinner-->
+                    <!--            android:id="@+id/spinner"-->
+                    <!--            android:layout_width="match_parent"-->
+                    <!--            android:layout_height="wrap_content"-->
+                    <!--            android:layout_marginTop="10dp"-->
+                    <!--          />-->
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Add your status"
+                    android:textColor="@color/purple_500"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/etStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+
+                    android:background="@drawable/search_edit_background" />
+
+                <TextView
+                    android:id="@+id/tvCountStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="0/250"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/purple_500"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+            <!--        Slider-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Select Hyper local distance"
+                    android:textColor="@color/purple_500"
+                    android:textSize="15sp" />
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progressTint="@color/purple_500"
+                    android:stepSize="0"
+                    android:value="10"
+                    android:valueFrom="1"
+                    android:valueTo="100" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+
+                        android:layout_width="133dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1 Km"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/purple_500"
+                        android:textSize="15sp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="100Km"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Select Purpose"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <!--        <HorizontalScrollView-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content">-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+
+                <Button
+                    android:id="@+id/btnCoffee"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:text="Coffee"
+
+                    android:textAllCaps="false"
+                    android:textColor="@color/purple_500"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null"
+                    app:strokeWidth="3dp" />
+
+                <Button
+                    android:id="@+id/btnBusiness"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+
+                    android:text="Business"
+                    android:textAllCaps="false"
+                    android:textColor="@color/purple_500"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null"
+
+                    app:strokeWidth="3dp" />
+
+                <Button
+                    android:id="@+id/btnHobbies"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:text="Hobbies"
+                    android:textAllCaps="false"
+                    android:textColor="@color/purple_500"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null"
+                    app:strokeWidth="3dp" />
+
+                <Button
+                    android:id="@+id/btnFriendship"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+
+                    android:text="Friendship"
+                    android:textAllCaps="false"
+                    android:textColor="@color/purple_500"
+                    android:textSize="9sp"
+                    app:backgroundTint="@null"
+
+                    app:strokeWidth="3dp"
+
+                    />
+
+
+            </LinearLayout>
+            <!--        </HorizontalScrollView>-->
+
+            <!--        <HorizontalScrollView-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginTop="5dp">-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+
+                android:weightSum="4">
+
+                <Button
+                    android:id="@+id/btnMovies"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:text="Movies"
+                    android:textAllCaps="false"
+                    android:textColor="@color/purple_500"
+
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/btnDinning"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:text="Dinning"
+                    android:textAllCaps="false"
+                    android:textColor="@color/purple_500"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null"
+                    app:strokeWidth="3dp" />
+
+                <Button
+                    android:id="@+id/btnDatting"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:text="Datting"
+                    android:textAllCaps="false"
+                    android:textColor="@color/purple_500"
+
+
+                    android:textSize="10sp"
+                    app:backgroundTint="@null"
+                    app:strokeWidth="3dp" />
+
+                <Button
+                    android:id="@+id/btnMatrimony"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:text="Matrimony"
+                    android:textAllCaps="false"
+                    android:textColor="@color/purple_500"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null"
+                    app:strokeWidth="3dp" />
+
+
+            </LinearLayout>
+            <!--        </HorizontalScrollView>-->
+
+
+            <Button
+                android:id="@+id/btnSaveExplore"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_background"
+                android:backgroundTint="@color/white"
+                android:text="@string/save_explore"
+                android:textAllCaps="false" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</FrameLayout>

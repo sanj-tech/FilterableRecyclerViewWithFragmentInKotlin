@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/edit_profile_icon"
+
+        android:title="@string/edit_profile" />
+
+    <item
+        android:id="@+id/nav_network"
+        android:icon="@drawable/icon_network"
+        android:title="@string/my_network" />
+
+    <item
+        android:id="@+id/nav_professional"
+        android:icon="@drawable/professional_icon"
+        android:title="@string/switch_to_professional" />
+    <item
+        android:id="@+id/nav_merchant"
+        android:icon="@drawable/business_card_icon"
+        android:title="@string/switch_to_merchant" />
+
+    <item
+        android:id="@+id/nav_datting"
+        android:icon="@drawable/datting_icon"
+        android:title="@string/datting" />
+
+    <item
+        android:id="@+id/nav_matrimony"
+        android:icon="@drawable/matrimony_icon"
+        android:title="Matrimony" />
+
+    <item
+        android:id="@+id/nav_sell"
+        android:icon="@drawable/sell_icel"
+        android:title="@string/buy_sell_rent" />
+    <item
+        android:id="@+id/nav_job"
+        android:icon="@drawable/job_icon"
+        android:title="@string/job" />
+    <item
+        android:id="@+id/nav_business"
+        android:icon="@drawable/business_card_icon"
+        android:title="@string/business_cards" />
+    <item
+        android:id="@+id/nav_hashtags"
+        android:icon="@drawable/hashtags_icon"
+        android:title="@string/hashtags" />
+    <item
+        android:id="@+id/nav_notes"
+        android:icon="@drawable/notes_icon"
+        android:title="@string/notes" />
+
+    <item
+        android:id="@+id/nav_location"
+        android:icon="@drawable/live_location_icon"
+        android:title="@string/live_location" />
+
+
+</menu>
